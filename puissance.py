@@ -1,6 +1,10 @@
 print("+---+---+---+---+---+---+---+---+")
 print("\n")
 
+i=0
+while i<7:
+     print(i)
+     i+=1
 count_tableau = 0
 ligne = 8
 while count_tableau < ligne:
