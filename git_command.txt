@@ -1,0 +1,16 @@
+git init
+git status
+git add nom_fichier
+git commit -m"message"
+
+git branch -M main
+git remote add origin git@github.com:ELMOTTA89/git_command.git
+git push -u origin main
+
+#pour cloner un fichier sur ton local:
+
+git clone lien_git
+
+#mettre à jour la ripo
+
+git pull --rebase 
