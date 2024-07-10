@@ -14,3 +14,9 @@ git clone lien_git
 #mettre à jour la ripo
 
 git pull --rebase 
+
+git branch nom_branch
+git checkout nom_branch
+
+#merger
+git merge branch_à_merger
