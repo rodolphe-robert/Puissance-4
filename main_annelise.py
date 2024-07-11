@@ -29,7 +29,7 @@ if __name__=="__main__":
 
     agagne=0
     count=0
-    while agagne != 1 and count < 41 :
+    while agagne != 1 and count <= 41 :
 
         choix=int(input("Entrer un numero de colonne pour inserer le pion :"))
         
