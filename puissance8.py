@@ -66,7 +66,7 @@ class Pion(Board):
 
 
 if __name__ == "__main__":
-    board = Board(10,8)
+    board = Board(7,6)
     board.display()
    
 
