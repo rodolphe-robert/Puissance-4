@@ -16,14 +16,24 @@ class Board:
 
         l=[[" " for _ in range(row+1)] for _ in range(cell+1) ]
         char=" "
-        i=0
-        j=0
+        
         count=0
         count_nbr=0
         count_choix=0
+        l[5][0]="X"
+           ###### remplissage ###
+        j=choix
+        i=row-1
+        while(i>=0):
+            if(count_choix==0):
+               if(l[i][j]==" "):
+                 l[i][j]=symbole
+                 count_choix+=1
+            i-=1
 
         #Loop to display number of cells
-
+        i=0
+        j=0
         while(count_nbr<cell):
             print(f"  {count_nbr} ",end='')
             count_nbr+=1
@@ -38,10 +48,8 @@ class Board:
             print("+")
             count=0
             while(j<cell):
-                if(count_choix==choix):
-                    l[i][j]=symbole
+               
                 print(f'| {l[i][j]}',end=' ')
-                count_choix+=1
                 j+=1
             print("|")
             j=0
@@ -52,8 +60,14 @@ class Board:
             count+=1
         print("+")
 
-        ###### remplissage ###
+     
+            
 
+       # if(j==choix):
+       #             if(count_choix==0):
+       #                 if(l[i][j]==" "):
+       #                     l[i][j]=symbole
+       #                     count_choix+=1
 
 
 

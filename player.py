@@ -5,3 +5,4 @@ class player:
     
     def display(self):
         print(self.nom)
+    
